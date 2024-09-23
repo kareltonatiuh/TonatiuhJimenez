@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eliminar datos.</title>
+	<link rel="stylesheet" type="text/css" href="css/eliminar.css">
+</head>
+<body>
+	<header></header>
+	<form action="php/eliminar.php" method="post">
+		<h2>Elimina un producto.</h2>
+		<!--La etiqueta <label> tambien funciona para colocar etiquetas 
+			a los elementos de un formulario en HTML-->
+		<label for="codprodtxt">Introduzca el código del producto a eliminar:</label> 
+		<input type="text" name="codprodtxt" required>
+		<input type="submit" name="eliminarbtn" value="Elimina el producto" id="botoneliminar">
+	</form>
+</body>
+</html>

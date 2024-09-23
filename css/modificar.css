@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*Enlazamos un recurso externo para fuentes o tipos de letra de google.
+Página de fuentes de Google: https://fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+*
+{
+	font-family: 'Comic Sans MS', cursive;
+}
+body
+{
+	background-image: url("../images/fondo.jpg" );
+	font-family: "Comic Sans MS";
+}
+header
+{
+	background-image: url("../images/pizza8.jpg");
+	font-size: 70px;
+	font-weight: bold;
+	text-align: left;
+	margin: 20px;
+	padding: 100px;
+}
+li
+{ 
+	flex-grow: 1; 
+}
+a
+{
+	display:block;
+	padding:1em;
+	background-color:#FB1D59;
+	text-align:center;
+	margin-bottom:0.2em;
+	text-decoration:none;
+	color:white;
+}
+a:hover 
+{
+	background-color:#FF7800;
+	transition: 0.5s;
+}
+#modificar, #buscar, div
+{
+	margin: auto;
+	background-color: rgba(255,87,51,0.8); 
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px;
+	color: white; 
+}
+#buscar
+{
+	width: 50%;
+}
+#modificar
+{
+	width: 90%;
+}
+div
+{
+	width: 300px;
+	text-align: center;
+	color: white;
+}
+div img
+{
+	width: 100%;
+	object-fit: cover;
+}
+h1
+{
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px; 
+}
+.cajas
+{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}
+
+#boton
+{
+	margin-top:10px; 
+	background-color: #FB1D59;
+	color: white;
+	padding: 20px;
+	font-family: 'Comic Sans MS', cursive; /*Familia de fuentes externa de google.*/
+	font-size: 20px;
+}
+#boton:hover
+{
+	cursor: pointer;
+	background-color: white;
+	color: #FB1D59;
+	transition: 0.5s;
+	font-family: 'Comic Sans MS', cursive; /*Familia de fuentes externa de google.*/
+	font-size: 20px;
+}
+/*Permite al formulario ser responsivo 
+y que se adapte al tamaño de la ventana, 
+@media es un estilo que se aplicará solo
+si la condición se cumple*/
+@media(max-width: 480px)
+{
+	form, div
+	{
+		width: 100%;
+	}
+}

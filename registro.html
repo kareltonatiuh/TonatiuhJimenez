@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro de Usuario</title>
+	<link rel="stylesheet" type="text/css" href="css/registro.css">
+</head>
+<body>
+	<form action="php/registro.php" method="post">
+		<h1>Regístrate para entrar</h1>
+		<input type="text" name="nombretxt" placeholder="Nombre(s)" class="cajas" required>
+		<input type="text" name="paternotxt" placeholder="Apellido Paterno" class="cajas" required>
+		<input type="text" name="maternotxt" placeholder="Apellido Materno" class="cajas" required>
+		<input type="email" name="correotxt" placeholder="Ej: chicamayor@email.com" class="cajas" required>
+		<input type="password" name="passwordtxt" placeholder="contraseña" class="cajas" required>
+		<label for="fecha_nactxt">Fecha de Nacimiento:</label>
+		<input type="date" name="fecha_nactxt" class="cajas" required>
+		<label for="sexoradio">Sexo:</label>
+		<input type="radio" name="sexoradio" value="HOMBRE" required>Hombre
+		<input type="radio" name="sexoradio" value="MUJER">Mujer	
+		<input type="submit" name="registrarbtn" value="Registrar" class="cajas" id="boton">
+	</form>
+</body>
+</html>

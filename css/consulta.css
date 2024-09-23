@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+*
+{
+	font-family: 'Comic Sans MS', cursive;
+}
+body
+{
+	background-image: url("../images/fondo.jpg" );
+	font-family: "Comic Sans MS";
+}
+header
+{
+	background-image: url("../images/pizza8.jpg");
+	font-size: 70px;
+	font-weight: bold;
+	text-align: left;
+	margin: 20px;
+	padding: 100px;
+}
+form
+{
+	width: 500px;
+	margin: auto;
+	background-color: rgba(255,87,51,0.8);
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px; 
+	font-size: 20px;
+}
+form img
+{
+	width: 100%;
+	object-fit: cover;
+}
+div
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+#cuadroregresa
+{
+	background-color: #44AF15;
+	border-radius: 25px;
+	width: 100%;
+	text-align: center;
+}
+h2
+{
+	color:white;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px; 
+}
+input
+{
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:20px;
+	border: none;
+}
+#codprod
+{
+	width: 100%;
+}
+#botonconsultar
+{
+	width: 100%;
+	background-color: #FB1D59;
+	color: white;
+	padding: 20px;
+}
+#botonconsultar:hover
+{
+	cursor: pointer;
+	background-color: white;
+	color: #FB1D59;
+	transition: 0.5s;
+}
+/*Permite al formulario ser responsivo 
+y que se adapte al tamaño de la ventana, 
+@media es un estilo que se aplicará solo
+si la condición se cumple*/
+@media(max-width: 480px)
+{
+	form, div
+	{
+		width: 100%;
+	}
+}
+li
+{ 
+	flex-grow: 1; 
+}
+a
+{
+	display:block;
+	padding:1em;
+	background-color:#FB1D59;
+	text-align:center;
+	margin-bottom:0.2em;
+	text-decoration:none;
+	color:white;
+}
+a:hover 
+{
+	background-color:#FF7800;
+	transition: 0.5s;
+}
+table
+{
+	width: 100%;
+	border-collapse: collapse; /*Fusiona los bordes de la tabla*/
+	/*Estilos del borde separados por espacio: Grosor, Tipo y Color*/
+	border: 1px solid black;
+	margin: auto; /*Centra la tabla*/
+	margin-top: 20px;
+	background-color: rgba(220, 118, 51,0.8);
+}
+
+/*Los estilos CSS pueden ser compartidos entre 2 o mas selectores o etiquetas
+separados por comas*/
+th, td 
+{
+	padding: 10px; /*Margen interior de la cabecera y las celdas de datos*/
+}
+
+th
+{
+	background-color: #D35400; /*Color de Fondo*/ 
+	color: #FFFFFF; /*Color de la tipografía*/
+	text-transform: uppercase; /*Cambia la tipografía a mayúsculas*/
+}
+
+td
+{
+	text-align: center; /*Alineación de la tipografía*/
+	/*Estilos del borde inferior de la tabla separados por espacio: Grosor, Tipo y Color*/
+	border-bottom: 2px solid #3A0549;;
+	color: #3A0549;; /*Color de la tipografía*/
+	font-size: 16px; /*Tamaño de tipografía*/
+}

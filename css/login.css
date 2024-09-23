@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*Enlazamos un recurso externo para fuentes o tipos de letra de google.
+Página de fuentes de Google: https://fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+body
+{
+	background-image: url("../images/fondo.jpg" );
+	font-family: "Comic Sans MS";
+}
+form, div
+{
+	width: 450px;
+	margin: auto;
+	background-color: rgba(255,87,51,0.8);
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px;
+	color: white; 
+	margin-top: 200px;
+	list-style-type: none;
+	text-align: right;
+}
+div
+{
+	text-align: center;
+	color: white;
+}
+div img
+{
+	width: 100%;
+	object-fit: cover;
+}
+h1
+{
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px; 
+}
+.cajas
+{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}
+
+#boton
+{
+	margin-top:10px; 
+	background-color: #FB1D59;
+	color: white;
+	padding: 20px;
+	font-family: 'Mansalva', cursive; /*Familia de fuentes externa de google.*/
+	font-size: 20px;
+}
+#boton:hover
+{
+	cursor: pointer;
+	background-color: white;
+	color: #EC21AC;
+	transition: 0.5s;
+	font-family: 'Mansalva', cursive; /*Familia de fuentes externa de google.*/
+	font-size: 20px;
+}
+/*Permite al formulario ser responsivo 
+y que se adapte al tamaño de la ventana, 
+@media es un estilo que se aplicará solo
+si la condición se cumple*/
+@media(max-width: 480px)
+{
+	form, div
+	{
+		width: 100%;
+	}
+}

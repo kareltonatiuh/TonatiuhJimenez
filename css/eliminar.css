@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+*
+{
+	font-family: 'Comic Sans MS', cursive;
+}
+body
+{
+	background-image: url("../images/fondo.jpg" );
+	font-family: "Comic Sans MS";
+}
+header
+{
+	background-image: url("../images/pizza8.jpg");
+	font-size: 70px;
+	font-weight: bold;
+	text-align: left;
+	margin: 20px;
+	padding: 100px;
+}
+form, div
+{
+	width: 500px;
+	margin: auto;
+	background-color: rgba(255,87,51,0.8);
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+}
+li
+{ 
+	flex-grow: 1; 
+}
+a
+{
+	display:block;
+	padding:1em;
+	background-color:#FB1D59;
+	text-align:center;
+	margin-bottom:0.2em;
+	text-decoration:none;
+	color:white;
+}
+a:hover 
+{
+	background-color:#FF7800;
+	transition: 0.5s;
+}
+div, label
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+div img
+{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+#cuadroregresa
+{
+	background-color: #44AF15;
+	border-radius: 25px;
+	width: 100%;
+	text-align: center;
+}
+h2
+{
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px; 
+}
+input
+{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:20px;
+	border: none;
+}
+#botoneliminar
+{
+	width: 100%;
+	background-color: #FB1D59;
+	color: white;
+	padding: 20px;
+}
+#botoneliminar:hover
+{
+	cursor: pointer;
+	background-color: white;
+	color: #FB1D59;
+	transition: 0.5s;
+}
+/*Permite al formulario ser responsivo 
+y que se adapte al tamaño de la ventana, 
+@media es un estilo que se aplicará solo
+si la condición se cumple*/
+@media(max-width: 480px)
+{
+	form, div
+	{
+		width: 100%;
+	}
+}

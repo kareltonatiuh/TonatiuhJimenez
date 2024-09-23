@@ -1,0 +1,65 @@
+form, div
+{
+	width: 800px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.8);
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px; 
+}
+div, label
+{
+	color: white;
+	font-size: 20px;
+}
+#cuadroregresa
+{
+	background-color: #44AF15;
+	border-radius: 25px;
+	width: 100%;
+	text-align: center;
+}
+h2
+{
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px; 
+}
+input
+{
+	width: 20%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:20px;
+	border: none;
+}
+#botonenviar
+{
+	width: 100%;
+	background-color: #44AF15;
+	color: white;
+	padding: 20px;
+}
+#botonenviar:hover
+{
+	cursor: pointer;
+	background-color: #21EC56;
+	transition: 0.5s;
+}
+/*Permite al formulario ser responsivo 
+y que se adapte al tamaño de la ventana, 
+@media es un estilo que se aplicará solo
+si la condición se cumple*/
+@media(max-width: 480px)
+{
+	form
+	{
+		width: 100%;
+	}
+}

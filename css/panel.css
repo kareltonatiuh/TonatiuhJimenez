@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*Enlazamos un recurso externo para fuentes o tipos de letra de google.
+Página de fuentes de Google: https://fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Dosis&display=swap');
+
+body
+{
+	background-image: url("../images/panel_fondo.jpg");
+	/*Ocupa el 100% de ancho y alto de la ventana*/
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	margin: 0;
+	font-family: 'Dosis', sans-serif; /*Familia de fuentes externa de google.*/
+}
+section
+{
+	width: 50%;
+	margin: auto;
+	background-color: rgba(7,82,102,0.8);
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:5%;
+	border-radius: 7px; 
+	font-size: 20px;
+}
+h1
+{
+	font-family: 'Baloo Bhai', cursive;
+	text-align: center;
+}
+p
+{
+	text-align: center;
+	font-weight: bold;
+}
+ul, a img
+{
+	margin-left: 30%;
+	font-weight: bold;
+}

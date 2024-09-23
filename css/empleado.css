@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*Enlazamos un recurso externo para fuentes o tipos de letra de google.
+Página de fuentes de Google: https://fonts.google.com*/
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+*
+{
+	color:#0D3873;
+	font-family: 'Comic Sans MS', sans-serif; /*Familia de fuentes externa de google.*/
+}
+section
+{
+	width: 50%;
+	margin: auto;
+	background-color: rgba(255,87,51,0.8);
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:10%;
+	border-radius: 7px;
+	text-align: center; 
+}
+ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+li
+{ 
+	flex-grow: 1; 
+}
+a
+{
+	display:block;
+	padding:1em;
+	background-color:#FB1D59;
+	text-align:center;
+	margin-bottom:0.2em;
+	text-decoration:none;
+	color:white;
+}
+a:hover 
+{
+	background-color:#FF7800;
+	transition: 0.5s;
+}
+/*Permite al formulario ser responsivo 
+y que se adapte al tamaño de la ventana, 
+@media es un estilo que se aplicará solo
+si la condición se cumple*/
+@media(max-width: 480px)
+{
+	section
+	{
+		width: 100%;
+	}
+}

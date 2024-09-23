@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pizzeria :: Envio</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/envio.css">
+</head>
+<body>
+	<header></header>
+	<nav id="barra">
+		<ul id="menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="galeria.html">Imagenes</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="#">¿Quienes somos?</a>
+				<ul class="submenu">
+					<li><a href="mision.html">Nuestra mision</a></li>
+					<li><a href="vision.html">Nuestra vision</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Servicios</a>
+				<ul class="submenu">
+					<li><a href="Compra.html">Compra en linea</a></li>
+					<li><a id="pagina_activa" href="Envio.html">Costos de envio</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</nav>
+	<section>
+		<article>
+			
+			<hr>
+			<h1>Costo de Envio</h1>
+			<hr>
+		</article>
+		<article>
+				<form action="php/costoenvio.php" method="post">
+					<label for="cptxt">Introduze tu código postal</label>
+					<input type="text" name="cptxt"  required>
+					<input type="submit" name="enviarbtn" value="Calcular el costo" id="botonenviar">
+					
+				</form>
+		</article>
+	</section>
+	<footer>
+		<ul id="contacto">
+		<li><a href="contacto.html">Contactenos</a></li>
+		
+	</ul>
+	</footer>
+
+</body>
+</html>

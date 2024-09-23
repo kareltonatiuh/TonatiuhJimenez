@@ -1,0 +1,183 @@
+@charset "utf-8";
+body
+{
+	background-color: #FFFFFF;
+	font-family: "Comic Sans MS";
+}
+header
+{
+	background-image: url("../images/ACCRIM1.png");
+	background-size: 90% auto;
+	display: block;
+	margin: 0 auto;
+	width: 900px; height: 300px;
+	padding: 100px;
+}
+button {
+	background-color: #3c7b94; /* Color de fondo verde */
+	color: white; /* Texto en blanco */
+	padding: 10px 20px; /* Espaciado interno */
+	border: none; /* Sin borde */
+	border-radius: 5px; /* Bordes redondeados */
+	font-size: 16px; /* Tamaño de letra */
+	cursor: pointer; /* Cursor en forma de mano al pasar por encima */
+	transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+  }
+  
+  button:hover {
+	background-color: rgb(48, 92, 121); /* Cambio de color al pasar el mouse */
+  }
+  
+  button:active {
+	background-color: #3e8e7a; /* Color cuando se presiona */
+	box-shadow: 0 5px #666; /* Sombra cuando se presiona */
+	transform: translateY(2px); /* Efecto de movimiento hacia abajo */
+  }
+#barra
+{
+	font-size: 15px;
+	width: 72%;
+	margin: auto;
+	background-color: #008FFF;
+	color: white;
+}
+#barra ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#contacto
+{
+	font-size: 15px;
+	width: 72%;
+	margin: auto;
+	background-color: #008FFF;
+	color: white;
+}
+#contacto ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#contacto > li
+{
+	position: relative;
+	display: inline-block;
+}
+#contacto > li > a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 11px 16px;
+}
+#menu > li
+{
+	position: relative;
+	display: inline-block;
+}
+#menu > li > a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 11px 16px;
+}
+#menu li a:hover
+{
+	background-color: #008FFF;
+	color: black;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.submenu
+{
+	position: absolute;
+	width: 120%;
+	background-color: #008FFF;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.submenu li a
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 11px;
+}
+#menu li:hover .submenu
+{
+	visibility: visible;
+	opacity: 1;
+}
+#pagina_activa
+{
+	background-color: #001EFF;
+	font-style: bold;
+
+}
+section
+{
+	background-color: #5C00FF;
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+}
+#icono
+{
+	float: left;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+article
+{
+	background-color: #00BDFF;
+	width: 96%;
+	margin: 15px auto;
+	overflow: hidden;
+	text-align: center;
+}
+article > li
+{
+	background-color: #00BDFF;
+	width: 96%;
+	margin: 15px auto;
+	overflow: hidden;
+	text-align: justify;
+	list-style-type: none;
+}/*
+form, #cuadroconf
+{
+	width: 450px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.4);
+	//Padding 10px vertical y 20px horizontal
+	padding: 10px 20px;
+	//Permite que el relleno se vaya hacia adentro del formulario
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px; 
+}
+input,textarea
+{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}
+textarea
+{
+	//Ajusta el alto y alto mínimo y máximo del textarea para que no lo desajuste el usuario
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+	min-width: 100%;
+}*/

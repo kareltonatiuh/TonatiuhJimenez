@@ -1,0 +1,65 @@
+form, #datoscompra
+{
+	width: 80%;
+	margin: auto;
+	background-color: #B1AFAF;
+	/*Padding 10px vertical y 20px horizontal*/
+	padding: 10px 20px;
+	/*Permite que el relleno se vaya hacia adentro del formulario*/
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px; 
+}
+#nombre, #pago, #funcion1, #funcion2, #funcion3, #funcion4
+{
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}
+
+
+#cantgrande, #cantmediana, #cantchica, #cantrara
+{
+	width: 30px;
+	margin-bottom: 10px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}
+#cantgrande
+{
+	margin-right: 10px; 
+}
+#botonenviar
+{
+	background-color: #0C1D48;
+	color: white;
+	padding: 20px;
+	width: 100%;
+	font-size: 20px;
+}
+#botonenviar:hover
+{
+	cursor: pointer;
+	background-color: #3E5CA8;
+	transition: 0.5s;
+}
+form img
+{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+
+}
+input
+{
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}

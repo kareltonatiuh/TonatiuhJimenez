@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pizzeria</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/for.css">
+</head>
+<body>
+	<header></header>
+	<nav id="barra">
+		<ul id="menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="galeria.html">Imagenes</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="#">¿Quienes somos?</a>
+				<ul class="submenu">
+					<li><a href="mision.html">Nuestra mision</a></li>
+					<li><a href="vision.html">Nuestra vision</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Servicios</a>
+				<ul class="submenu">
+					<li><a href="Compra.html">Compra en linea</a></li>
+					<li><a href="Envio.html">Costos de envio</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</nav>
+	<div>
+	<section>
+		<article>
+			<hr>
+			<h2>Contactenos</h2>
+			<hr>
+		</article>
+		<form action="php/contacto.php" method="post">
+			<input type="text" name="nombretxt" placeholder="Nombre" required>
+			<input type="text" name="apellidotxt" placeholder="Apellido" required>
+			<input type="email" name="correotxt" placeholder="tu correo" required>
+			<textarea name="mensajetxt" placeholder="Escribe aquí tu mensaje" required=""></textarea>
+			<input type="submit" name="enviarbtn" value="Enviar Correo" id="botonenviar">
+		</form>
+	</section>
+	</div>
+	<footer>
+		<ul id="contacto">
+		<li><a href="contacto.html">Contactenos</a></li>
+		<li><a href="formulario.html" id="pagina_activa" >Formulario</a></li>
+	</ul>
+	</footer>
+
+</body>
+</html>

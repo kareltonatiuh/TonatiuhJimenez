@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Consultar datos.</title>
+	<link rel="stylesheet" type="text/css" href="css/consulta.css">
+</head>
+<body>
+	<header></header>
+	<form action="php/consulta.php" method="post">
+		<h2>Consulta un producto.</h2>
+		<!--La etiqueta <label> tambien funciona para colocar etiquetas 
+			a los elementos de un formulario en HTML-->
+		<label for="codprodtxt">¿Qué tipo de consulta requiere?</label>
+		<br> 
+		<input type="radio" name="tipoconsultaradio" value="todos" onclick="codprodtxt.disabled= this.checked" required>Todos los productos.
+		<br>
+		<input type="radio" name="tipoconsultaradio" value="porcodprod" required onclick="codprodtxt.disabled= !this.checked">Por código de producto.
+		<br>
+		<input type="text" name="codprodtxt" required disabled id="codprod">
+		<input type="submit" name="consultabtn" value="Consulta tu producto" id="botonconsultar">
+	</form>
+</body>
+</html>

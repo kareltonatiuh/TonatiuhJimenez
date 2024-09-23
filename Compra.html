@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pizzeria :: Compra en linea</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/cinemex.css">
+</head>
+<body>
+	<header></header>
+	<nav id="barra">
+		<ul id="menu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="galeria.html">Imagenes</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="#">¿Quienes somos?</a>
+				<ul class="submenu">
+					<li><a href="mision.html">Nuestra mision</a></li>
+					<li><a href="vision.html">Nuestra vision</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Servicios</a>
+				<ul class="submenu">
+					<li><a href="Compra.html" id="pagina_activa">Compra en linea</a></li>
+					<li><a href="Envio.html">Costos de envio</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</nav>
+	<div>
+	<section>
+		<article>
+			<hr>
+			<h2>Compra en Linea</h2>
+			<hr>
+		</article>
+		<form action="php/cinemex.php" method="post">
+			<input type="text" name="nombretxt" placeholder="Nombre del Cliente"
+			id="nombre" required>
+			------------------------------------------------------------------------------------
+			<input type="checkbox" name="tipoboletochk[]" value="Grande" onclick="cantgrandetxt.disabled=!this.checked">
+			<img src="images/pizza1.jpg">
+			Cantidad:
+			
+			<input type="textbox" name="cantgrandetxt" value="0" id="cantgrande" required disabled>
+			<br>
+			Ingrediente:
+			<br>
+			<select name="funcion1lst" size="3" id="funcion1">
+				<option value="Pepperoni" selected="">Pepperoni</option>
+				<option value="Carne">Carne</option>
+				<option value="Hawaiana">Hawaiana</option>
+			</select>
+			<br>
+			------------------------------------------------------------------------------------
+			<input type="checkbox" name="tipoboletochk[]" value="Mediana" onclick="cantmedianatxt.disabled=!this.checked"><img src="images/pizza2.jpg">
+				
+			Cantidad:
+			
+			<input type="textbox" name="cantmedianatxt" value="0" id="cantmediana" required disabled><br>
+			Ingrediente:
+			<br>
+			<select name="funcion2lst" size="3" id="funcion2">
+				<option value="Pepperoni" selected="">Pepperoni</option>
+				<option value="Carne">Carne</option>
+				<option value="Hawaiana">Hawaiana</option>
+			</select>
+			<br>
+			------------------------------------------------------------------------------------
+			<input type="checkbox" name="tipoboletochk[]" value="Chica" onclick="cantchicatxt.disabled=!this.checked">
+			<img src="images/pizza3.jpg">
+			Cantidad:
+			
+			<input type="textbox" name="cantchicatxt" value="0" id="cantchica" required disabled>
+			<br>
+			Ingrediente:
+			<br>
+			<select name="funcion3lst" size="3" id="funcion3">
+				<option value="Pepperoni" selected="">Pepperoni</option>
+				<option value="Carne">Carne</option>
+				<option value="Hawaiana">Hawaiana</option>
+			</select>
+			<br>			
+			------------------------------------------------------------------------------------
+			<input type="checkbox" name="tipoboletochk[]" value="rara" onclick="cantraratxt.disabled=!this.checked">
+			<img src="images/pizza4.jpg">
+			Cantidad:
+			
+			<input type="textbox" name="cantraratxt" value="0" id="cantrara" required disabled>
+			<br>
+			Ingrediente:
+			<br>
+			<select name="funcion4lst" size="3" id="funcion4">
+				<option value="Pepperoni" selected="">Pepperoni</option>
+				<option value="Carne">Carne</option>
+				<option value="Hawaiana">Hawaiana</option>
+			</select>
+			<br>
+			------------------------------------------------------------------------------------
+			<h1>¿Usuario frecuente?</h1>
+			<input type="radio" name="frecuenteradio" value="si">Si
+			<br>
+			<input type="radio" name="frecuenteradio" value="no" checked>No
+			<br><br>
+			Pago con:
+			<select name="pagocmd" id="pago">
+				<option value="Tarjeta" selected>Tarjeta</option>
+				<option value="Efectivo">Efectivo</option>
+				<option value="Puntos">Puntos</option>
+			</select><br>
+			<input type="submit" name="comprarbtn" value="Realizar Compra" id="botonenviar">
+		</form>
+	</section>
+	</div>
+	<footer>
+		<ul id="contacto">
+		<li><a href="contacto.html">Contactenos</a></li>
+	</ul>
+	</footer>
+
+</body>
+</html>
