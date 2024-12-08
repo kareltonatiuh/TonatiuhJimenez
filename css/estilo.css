@@ -181,3 +181,35 @@ textarea
 	max-width: 100%;
 	min-width: 100%;
 }*/
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Mostrar el submenú cuando el usuario pasa el mouse sobre el ítem */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilo para los elementos activos */
+#menu > li > a:hover {
+  background-color: #555;
+}
